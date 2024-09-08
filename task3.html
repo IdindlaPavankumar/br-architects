@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background-color: burlywood;
+            width: 30%;
+            height: 100vh;
+            overflow: scroll;
+            margin: 50px;
+            border-color: black;
+            scrollbar-width: none;
+        }
+
+        .container1 {
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .header {
+            border: 1px solid #ccc;
+            width: 100%;
+            height: 10%;
+            border-bottom: none;
+            display: inline-block;
+            background-color: #efefef;
+            margin: 0px;
+            border-top-left-radius: 0px;
+            border-top-right-radius: 0px;
+            background-color: black;
+
+        }
+
+        .img {
+            float: left;
+            margin: 2px;
+        }
+
+        .active {
+            width: 100px;
+            float: left;
+            justify-content: flex-start;
+            font-weight: bold;
+            color: white;
+            height: 10%;
+            margin: 2px, 3px, 4px, 10px;
+            text-align: center;
+        }
+
+        .left {
+            text-align: left;
+            color: black;
+            margin: 10px;
+            background-color: white;
+            margin-right: 300px;
+            padding: 20px;
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .right {
+            text-align: right;
+            color: white;
+            margin: 10px;
+            background-color: darkgreen;
+            margin-left: 300px;
+            padding: 12px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .date {
+            text-align: center;
+            background-color: black;
+            width: 5vw;
+            color: white;
+            margin-left: 200px;
+            margin-top: 10px;
+            border-radius: 10px;
+            position: sticky;
+            top: 10px;
+        }
+
+        .chatbox-input {
+            position: relative;
+            width: 100%;
+            height: 60px;
+            background: #f0f0f0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center
+        }
+
+        .chatbox-input i {
+            cursor: pointer;
+            font-size: 1.8em;
+            color: #515855;
+        }
+
+        .chatbox-input i:nth-child(1) {
+            margin: 15px;
+        }
+
+        .chatbox-input i:last-child {
+            margin-right: 25px;
+        }
+
+        .chatbox-input input {
+            position: relative;
+            width: 100%;
+            margin: 0 20px;
+            padding: 10px 20px;
+            border-radius: 10px;
+            font-size: 1em;
+            border: none;
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container1">
+            <div class="header">
+                <div class="container2">
+                    <img class="img" src="Screenshot 2024-08-04 125127.png" alt="" width="20%" height="60px"
+                        style="border-radius: 80px;">
+                    <div class="active">
+                        <p>Love</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="date">Aug 11,24 </div>
+        <div class="left">Hi <br><span>07:34PM</span></div>
+        <div class="right">Hi <br><span>07:35PM</span></div>
+        <div class="left">How are u <br><span>07:37PM</span></div>
+        <div class="right">Fine and u <br><span>07:38</span></div>
+        <div class="left">what are yo bru doing <br><span>07:39PM</span></div>
+        <div class="right">I am done my office just now <br><span>07:42PM</span></div>
+        <div class="date">Aug 12,24</div>
+        <div class="left">Hello <br><span>09:38PM</span></div>
+        <div class="right">Hello <br><span>09:40PM</span></div>
+        <div class="left">where are you<br><span>09:42PM</span></div>
+        <div class="right">I am in Room<br><span>09:44PM</span></div>
+        <div class="left">Do you Have any work<br><span>09:45PM</span></div>
+        <div class="right">Ya , I have Some work<br><span>09:46PM</span></div>
+        <div class="left">ok<br><span>09:47PM</span></div>
+        <div class="right">ok<br><span>09:47PM</span></div>
+        <div class="left">completed ur work<br><span>09:49PM</span></div>
+        <div class="right">ha<br><span>09:50PM</span></div>
+        <div class="left">ok come to my room<br><span>09:50PM</span></div>
+        <div class="right">ya , i am coming<br><span>09:52PM</span></div>
+        <div class="left">let's go<br><span>09:53PM</span></div>
+        <div class="right">where<br><span>09:54PM</span></div>
+        <div class="left">movie<br><span>09:55PM</span></div>
+        <div class="right">which movie<br><span>09:56PM</span></div>
+        <div class="date">Aug 13,24</div>
+        <div class="left">hi<br><span>09:57PM</span></div>
+        <div class="right">hi<br><span>09:58PM</span></div>
+        <div class="left">wt happen<br><span>09:59PM</span></div>
+        <div class="right">ntg<br><span>09:59PM</span></div>
+        <div class="left">yesterday night i send a msg but u can't responsed<br><span>10:40PM</span></div>
+        <div class="right">ho ,i forgot that<br><span>10:42PM</span></div>
+        <div class="left">ok ,then can i meet today <br><span>10:42PM</span></div>
+        <div class="right">ok where<br><span>10:43PM</span></div>
+        <div class="left">miyapur<br><span>10:44PM</span></div>
+        <div class="right">ok<br><span>10:45PM</span></div>
+        <div class="right">hi baby<br><span>10:46PM</span></div>
+        <div class="left">hi baby<br><span>10:47PM</span></div>
+        <div class="right">i love u<br><span>10:48PM</span></div>
+        <div class="left">love u too<br><span>10:49PM</span></div>
+        <div class="chatbox-input">
+            <i class="fa-regular fa-face-grin"></i>
+            <i class="fa-sharp fa-solid fa-paperclip"></i>
+            <input type="text" placeholder="Type a message">
+            <i class="fa-solid fa-microphone"></i>
+        </div>
+    </div>
+</body>
+
+</html>
